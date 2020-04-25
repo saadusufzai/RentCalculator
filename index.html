@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <h1>Calculator</h1>
+    <div class="slideContainer">
+          <label class="lab" for="options">I'd Like to rent out</label>
+          
+          <select class="select-css" id="options" onchange="selectSpace()"  >
+            <option value="Select">Select</option>
+            <option value="Space">Space</option>
+            <option value="Garage">Garage</option>
+            <option value="Other">Other</option>
+          </select>
+          <p class="rate" >Rate: <span id='rate'></span>  EUR/sqm </p>
+          <label class="lab2" for="options">Select size in sqm </label>
+          <input type="range" min="10" max="100" step="10" value="0"   class="slider" id="myRange">
+          <p><span id="value"></span> Sqm </p>
+          <p>Earn up to <span id="profit"></span> EUR per month.</p>
+      </div>
+  </div>
+
+      <script src="index.js"></script>
+</body>
+</html>
