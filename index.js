@@ -8,7 +8,10 @@ output.innerHTML = slider.value;
 
 slider.oninput = function() {
   output.innerHTML = this.value;
+  var x = this.value;
 }
+
+console.log(x)
 
 var start_value = slider.getAttribute("value");
 var x = 0;
